@@ -11,36 +11,48 @@ const Home = () => {
       <Header />
       
       {/* Hero Section */}
-      <section 
-        className="relative pt-32 pb-20 px-4 overflow-hidden"
-        style={{
-          backgroundImage: `linear-gradient(135deg, rgba(14, 70, 165, 0.95) 0%, rgba(37, 175, 178, 0.9) 50%, rgba(245, 140, 54, 0.85) 100%), url(${heroBg})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-      >
-        <div className="container mx-auto text-center relative z-10">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 animate-in fade-in slide-in-from-bottom-4 duration-700">
-            Your Career Journey <br />
-            <span className="text-accent">Starts Here</span>
-          </h1>
-          <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto animate-in fade-in slide-in-from-bottom-4 duration-700 delay-100">
-            Discover your perfect career path with personalized assessments, expert guidance, and AI-powered tools.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-in fade-in slide-in-from-bottom-4 duration-700 delay-200">
-            <Link to="/assessment">
-              <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground shadow-strong text-lg px-8 py-6 h-auto">
-                Take Assessment
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-            </Link>
-            <Link to="/chat">
-              <Button size="lg" variant="outline" className="bg-white/10 hover:bg-white/20 text-white border-white/30 backdrop-blur-sm text-lg px-8 py-6 h-auto">
-                Talk to AI Guide
-                <MessageCircle className="ml-2 h-5 w-5" />
-              </Button>
-            </Link>
+      <section className="relative pt-32 pb-20 px-4 overflow-hidden bg-gradient-to-br from-primary via-secondary to-accent">
+        {/* Background Pattern */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-10 left-10 w-64 h-64 bg-white rounded-full blur-3xl" />
+          <div className="absolute bottom-20 right-20 w-96 h-96 bg-white rounded-full blur-3xl" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-white rounded-full blur-3xl" />
+        </div>
+
+        {/* Climbing Illustration */}
+        <div className="absolute right-10 top-1/2 -translate-y-1/2 hidden lg:block">
+          <img src={heroBg} alt="Career Growth" className="w-[400px] h-auto opacity-90" />
+        </div>
+
+        <div className="container mx-auto relative z-10">
+          <div className="max-w-3xl">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 animate-in fade-in slide-in-from-bottom-4 duration-700">
+              Your Career Journey <br />
+              <span className="text-white drop-shadow-lg">Starts Here</span>
+            </h1>
+            <p className="text-xl md:text-2xl text-white/95 mb-8 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-100">
+              Discover your perfect career path with personalized assessments, expert guidance, and AI-powered tools designed for students like you.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-200">
+              <Link to="/assessment">
+                <Button size="lg" className="bg-white text-primary hover:bg-white/90 shadow-strong text-lg px-8 py-6 h-auto">
+                  Take Assessment
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </Link>
+              <Link to="/chat">
+                <Button size="lg" variant="outline" className="bg-white/10 hover:bg-white/20 text-white border-white/30 backdrop-blur-sm text-lg px-8 py-6 h-auto">
+                  Talk to AI Guide
+                  <MessageCircle className="ml-2 h-5 w-5" />
+                </Button>
+              </Link>
+            </div>
           </div>
+        </div>
+
+        {/* Mobile Illustration */}
+        <div className="lg:hidden mt-12 flex justify-center">
+          <img src={heroBg} alt="Career Growth" className="w-64 h-auto opacity-90" />
         </div>
       </section>
 
