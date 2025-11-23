@@ -8,7 +8,7 @@ const Header = () => {
   return <header className="fixed top-0 w-full bg-background/80 backdrop-blur-md border-b border-border z-50 shadow-soft">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-3 transition-smooth hover:opacity-80 text-slate-800 bg-stone-200">
+          <Link to="/" className="flex items-center gap-3 transition-smooth text-slate-800 opacity-95 bg-slate-300">
             <img src={logo} alt="StepUp Logo" className="h-10 w-auto" />
             <span className="text-2xl font-bold gradient-primary bg-clip-text text-transparent">
           </span>
