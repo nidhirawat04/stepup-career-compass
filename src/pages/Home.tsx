@@ -59,7 +59,7 @@ const Home = () => {
         <div className="container mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
             Everything You Need to
-            <span className="gradient-primary bg-clip-text text-slate-900">m</span>
+            <span className="gradient-primary bg-clip-text text-slate-900">Everything You Need To Win  </span>
           </h2>
           <p className="text-center text-muted-foreground text-lg mb-12 max-w-2xl mx-auto">
             StepUp provides comprehensive tools and resources to help you climb your career ladder
