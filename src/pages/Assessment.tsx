@@ -122,7 +122,7 @@ const Assessment = () => {
   return <div className="min-h-screen bg-muted/30">
       <Header />
       
-      <div className="container mx-auto px-4 pt-32 pb-20">
+      <div className="container mx-auto px-4 pt-32 pb-20 text-slate-950 bg-slate-100">
         <div className="max-w-3xl mx-auto">
           <div className="mb-8">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
