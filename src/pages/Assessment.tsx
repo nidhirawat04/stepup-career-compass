@@ -126,7 +126,7 @@ const Assessment = () => {
         <div className="max-w-3xl mx-auto">
           <div className="mb-8">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              Career <span className="gradient-primary bg-clip-text text-transparent">          Assessment</span>
+              Career Assessment  <span className="gradient-primary bg-clip-text text-transparent">                                                       </span>
             </h1>
             <p className="text-muted-foreground text-lg">
               Answer these questions to discover your ideal career path
