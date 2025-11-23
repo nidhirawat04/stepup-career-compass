@@ -58,8 +58,8 @@ const Home = () => {
       <section className="py-20 px-4 bg-muted/30">
         <div className="container mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
-            Everything You Need to
-            <span className="gradient-primary bg-clip-text text-slate-900">Everything You Need To Win  </span>
+            Everything You Need to Win 
+            <span className="gradient-primary bg-clip-text text-slate-900"></span>
           </h2>
           <p className="text-center text-muted-foreground text-lg mb-12 max-w-2xl mx-auto">
             StepUp provides comprehensive tools and resources to help you climb your career ladder
