@@ -10,7 +10,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center gap-3 transition-smooth text-slate-800 opacity-95 bg-slate-300">
             <img src={logo} alt="StepUp Logo" className="h-10 w-auto" />
-            <span className="text-2xl font-bold text-foreground">
+            <span className="text-2xl font-bold text-[#072278] font-serif">
               StepUp
             </span>
           </Link>
