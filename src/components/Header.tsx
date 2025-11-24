@@ -11,7 +11,8 @@ const Header = () => {
           <Link to="/" className="flex items-center gap-3 transition-smooth text-slate-800 opacity-95 bg-slate-300">
             <img src={logo} alt="StepUp Logo" className="h-10 w-auto" />
             <span className="text-2xl font-bold gradient-primary bg-clip-text text-transparent">
-          </span>
+              StepUP
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
